@@ -1,0 +1,62 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* Font Styles */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* @FontFace */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/sites/default/files/fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('/sites/default/files/fonts/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/sites/default/files/fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('/sites/default/files/fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Font Styles Defaults */
+body{padding:0; margin:0; font-weight: 400; font-size:14px; font-family:"Open Sans", sans-serif;}
+h1, h2, h3, h4, h5, h6{}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p{}
+p a{}
+a{}
+a:hover{}
+ul, ol{}
+ul{}
+ol{}
+li{}
+
+/* Top Bar */
+#section-header{background:#d9dddf; padding:25px 0;}
+#section-header #region-branding{max-width:1200px; padding:0 20px; box-sizing: border-box; margin:0 auto!important; display: block;}
+
+/* Header Image */
+.front header.l-wrapper {
+    height: 600px;
+    background-image: url("/sites/default/files/Header-HeroeImages-Tier1-Cancer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Grid Overrides */
+div[class^="grid-"]{margin:0!important;}
+div[class^="panels-flexible-"]{padding:0!important;}
+
+/* Header Supporting Text */
+.header-text{background:#d9dddf;}
+.supporting-text{max-width:1200px; margin:0 auto;}
+.supporting-text p{font-size:25px; line-height:35px; text-align:center; margin:35px 0;}

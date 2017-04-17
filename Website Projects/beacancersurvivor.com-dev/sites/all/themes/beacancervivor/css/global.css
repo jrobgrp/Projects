@@ -1,0 +1,898 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* Font Styles */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+#headeralternate{
+	font-family: 'MyriadPro-Black', sans-serif;
+	font-size: 53px;
+	color: #1757c1;
+}
+
+#subheaderalternate{
+font-family: 'MyriadPro-Black', sans-serif;
+	font-size: 48px;
+}
+
+body, h1, h3, h5, h6 {
+	
+}
+
+body b, body strong{font-weight:700;}
+
+header, nav, section, article, aside, footer {
+   display:block;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	color: #252525;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 1px;
+	font-family:"League Gothic";
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 800;
+	color: #661776;
+	text-transform: uppercase;
+}
+h2 {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 700;
+}
+h3 {
+	color: #794197;
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: 300;
+}
+h4 {
+	font-size: 20px;
+	font-weight: 400;
+}
+h5 {
+	font-size: 21px;
+	color: #010000;
+	font-weight: 700;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+h6 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+}
+p, li {
+	font-weight: 300;
+}
+a, a:link, a:visited {
+	color: #df9161;
+	font-weight: 400;
+	text-decoration: none;
+}
+a:hover, a:link:hover, #zone-content-wrapper a:hover, #zone-content-wrapper a:link:hover {
+  color: #661776;
+}
+
+/* Buttons */
+a.button, #edit-submit {
+	background-color: #b30808;
+	background: #b30808;
+	padding: 2% 5%;
+	font-size: 26px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	max-height: 100px;
+	max-width: 260px;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-width: 0px;
+	text-shadow: 0px 0px 0px #fff;
+}
+a.button:hover, #edit-submit:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+#edit-submit {
+	padding: 1% 2%;
+	color: #fff;
+}
+
+/* Branding */
+
+#zone-branding-wrapper {
+	padding: 2em 0;
+}
+
+#zone-branding-wrapper, #zone-menu-wrapper {
+	background-color: #fff;
+}
+#zone-menu-wrapper {
+	border-top: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
+}
+#zone-banner-title-wrapper {
+	padding: 2em 0;
+	background-color: #661776;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 1200%;
+    background-image: url("/sites/default/files/images/fhmg-bubble-tile.png");
+}
+.title-wrapper {
+	padding: 7em 0 2em !important;
+}
+
+#zone-banner-title-wrapper h2 {
+	font-style: italic;
+	margin-bottom: 0;
+}
+#region-cta-button {
+	padding-top: .6%;
+}
+#region-cta-button .button {
+	float: right;
+}
+.logo {
+	background-image: url("/sites/default/files/images/FHMG_corporate_Oncology_logo_2c-2.png");
+    background-size: 100% 82px;
+    height: 82px;
+    max-width: 300px;
+}
+
+/* Menu */
+#zone-homepage-menu-wrapper, #zone-menu-wrapper {
+	background-color: #fff;
+	border-bottom: 1px solid #c2c2c2;
+	z-index: 600;
+}
+
+#zone-menu-wrapper .grid-4, #zone-homepage-menu-wrapper .grid-4 {
+	border-right: 1px solid #c2c2c2;
+	border-left: 1px solid #c2c2c2;
+	text-align: center;
+	padding: 20px 0;
+}
+#zone-menu-wrapper .first, #zone-homepage-menu-wrapper .first {
+	border-left: 0px solid #c2c2c2 !important;
+	border-right: 0px solid #c2c2c2 !important;
+}
+#zone-menu-wrapper .last, #zone-homepage-menu-wrapper .last {
+	border-right: 0px solid #c2c2c2 !important;
+	border-left: 0px solid #c2c2c2 !important;
+}
+#zone-menu-wrapper .middle, #zone-homepage-menu-wrapper .middle {
+	width: 31% !important;
+}
+#zone-menu-wrapper a:link, #zone-menu-wrapper a, #zone-homepage-menu-wrapper a:link, #zone-homepage-menu-wrapper a {
+	color: #6e6e6e;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+#zone-menu-wrapper a {
+	background-color: #fff;
+}
+#zone-menu-wrapper a:link:hover, #zone-menu-wrapper a:hover, #zone-homepage-menu-wrapper a:link:hover, #zone-homepage-menu-wrapper a:hover {
+	color: #df9161;
+}
+
+/* Fixed Menu */
+
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+	position: fixed;
+    width: 100%;
+}
+.navbar-body {
+	position: relative;
+	top: 67px;
+}
+
+/* Program Banner */
+
+#zone-program-banner-wrapper {
+	background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 536px;
+    padding: 0;
+    background-image: url("/sites/default/files/images/Breast-Hero-Banner.jpg");
+}
+#zone-program-banner-wrapper {
+	background-image: url("/sites/default/files/images/Breast-Hero-Banner.jpg");
+}
+#zone-program-banner-wrapper h1 {
+	text-indent: -9000px
+}
+
+
+/* Provider Banner */
+
+#zone-provider-banner-wrapper {
+			background-size: contain;
+		background-position: center top;
+		padding-top: 29%;
+		height: 0;
+		background-repeat: no-repeat;
+    background-image: url("/sites/default/files/images/Alemany.jpg");
+	
+}
+
+.page-node-4 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Alemany.jpg");
+}
+.page-node-5 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Ahmed-banner.jpg");
+}
+.page-node-6 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Akhtar-banner.jpg");
+}
+.page-node-7 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Bigsby-banner.jpg");
+}
+.page-node-8 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Brudie-banner.jpg");
+}
+.page-node-9 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Castillo-banner.jpg");
+}
+.page-node-10 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Chowdhary-banner.jpg");
+}
+.page-node-11 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Crisistomo-banner.jpg");
+}
+.page-node-12 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/George-banner.jpg");
+}
+.page-node-13 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Holloway-banner.jpg");
+}
+.page-node-14 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Kendrick-banner.jpg");
+}
+.page-node-15 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Khaled-banner.jpg");
+}
+.page-node-16 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Lukman-banner.jpg");
+}
+.page-node-17 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Mekhail-banner.jpg");
+}
+.page-node-18 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Reynolds-banner.jpg");
+}
+.page-node-19 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Robinson-banner.jpg");
+}
+.page-node-20 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Zakari-banner.jpg");
+}
+.page-node-22 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/DeLaFuente-banner.jpg");
+}
+.page-node-21 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Arnoletti-banner.jpg");
+}
+.page-node-23 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Magnuson-banner.jpg");
+}
+.page-node-24 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/White-banner.jpg");
+}
+.page-node-28 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Patel-banner.jpg");
+}
+.page-node-29 #zone-provider-banner-wrapper {
+	background-image: url("/sites/default/files/images/Mori-banner.jpg");
+}
+
+
+#zone-provider-banner-wrapper h1 {
+	text-indent: -9000px
+}
+
+/* Provider Title */
+
+#zone-provider-title-wrapper {
+	background-color: #661776;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 600%;
+    padding: 0;
+    background-image: url("/sites/default/files/images/fhmg-bubble-tile.png");
+    padding: 2em 0;
+}
+.page-node-4 #zone-provider-title-wrapper {
+	background-image: url("/sites/default/files/images/fhmg-bubble-tile.png");
+}
+#zone-provider-title-wrapper h1 {
+	font-size: 48px;
+	line-height: 52px;
+	font-style: italic;
+	color: #fff;
+	font-family: Georgia,'Times New Roman',serif;
+	font-weight: 600;
+	text-transform: none;
+}
+#zone-provider-title-wrapper h2 {
+	font-size: 24px;
+	line-height: 28px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+#zone-provider-title-wrapper h6 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 5px;
+	line-height: 28px;
+}
+.bottlecap {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-image: url("/sites/default/files/images/FHMG_Badge_SURG_MedDir.png");
+    height: 200px;
+}
+
+#zone-banner-wrapper .container-12, #zone-banner-wrapper .container-12 .grid-12 {
+	width: 100%;
+	margin: 0;
+}
+.rotating-banner {
+	max-width: 100% !important;
+}
+.rb-slide {
+	max-height: 536px;
+}
+.controls {
+	margin-top: -50px;
+	z-index: 500;
+	position: relative;
+	padding: 5px 0;
+	opacity: .4;
+	background-color: #fff;
+}
+.controls.buttons a {
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+.controls a {
+	margin: 5px;
+	padding: 15px;
+	line-height: 10px;
+}
+
+/* Header First */
+#zone-header-wrapper {
+	padding: 2em 0 5em;
+	background-color: #661776;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 250%;
+    background-image: url("/sites/default/files/images/fhmg-bubble-tile.png");
+}
+#zone-header-wrapper h1 {
+	text-align: center;
+	color: #fff;
+	line-height: 42px;
+}
+#zone-header-wrapper h4 {
+	color: #fff;
+}
+#zone-header-wrapper p {
+	color: #fff;
+}
+#zone-header-wrapper .center {
+	margin: 2em 0 0;
+}
+#zone-header-wrapper ul, #zone-program-content-wrapper ul {
+	padding: 0 15px;
+}
+#zone-header-wrapper li {
+	color: #fff;
+	margin-bottom: 10px;
+}
+#zone-program-content-wrapper li {
+	margin-bottom: 10px;
+}
+#zone-header-wrapper .content .clearfix {
+	margin-top: 40px;
+}
+
+/* Content */
+#zone-content-wrapper, #zone-content-two-wrapper {
+	padding: 6em 0;
+}
+.programs {
+	margin-top: 20px;
+}
+.programs .region-inner {
+	border-top: 1px solid #959595;
+	padding-top: 10px;
+}
+.programs .clearfix {
+	margin-bottom: 20px;
+}
+p.italic {
+	font-style: italic;
+	font-size: 16px;
+}
+.programs a, .programs a:link {
+	color: #df9161;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#block-block-72 {
+	float: right;
+	padding-top: 15px;
+}
+#florida-hospital-contact-form, #block-webform-client-block-30 {
+	max-width: 600px;
+}
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+	background: #f1f0f0;
+	background-color: #f1f0f0;
+	color: #252525;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+
+/* Providers */
+#block-views-providers-block {
+	margin-top: 20px;
+}
+.view-providers .views-row, .view-providers .views-row {
+	margin-bottom: 20px;
+	float: left;
+	min-height: 370px;
+}
+.view-programs-page .views-row {
+	margin-bottom: 20px;
+	float: left;
+}
+.views-row-1, .views-row-5, .views-row-13, .views-row-17 {
+	clear: both;
+}
+.views-row-1 .grid-3,
+.views-row-5 .grid-3,
+.views-row-9 .grid-3,
+.views-row-13 .grid-3,
+.views-row-17 .grid-3,
+.views-row-21 .grid-3
+{
+	margin-left: 0;
+}
+.views-row-4 .grid-3,
+.views-row-8 .grid-3,
+.views-row-12 .grid-3,
+.views-row-16 .grid-3,
+.views-row-20 .grid-3,
+.views-row-24 .grid-3
+{
+	margin-right: 0;
+}
+.view-providers h5, .view-programs-page h5 {
+	color: #794197;
+}
+.view-providers h5:hover, .view-programs-page h5:hover {
+	color: #df9161;
+}
+.view-providers .image, .view-programs-page .image {
+	margin-bottom: 10px;
+	max-height: 280px;
+}
+.specialties {
+	color: #df9161;
+	font-weight: 400;
+	font-size: 16px;
+	height: 100%;
+}
+.specialties a {
+	font-style: italic;
+	font-size: 16px;
+}
+
+/* Taxonomy Term Page */
+.page-taxonomy #zone-content-wrapper {
+	background-color: #e6dbe8;
+}
+#zone-program-content-wrapper {
+	padding: 2em 0;
+}
+
+#zone-program-content-wrapper h5, #zone-content-wrapper .grid-4 h5 {
+	border-bottom: 1px solid #959595;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+/* Video CTA */
+#zone-video-cta-wrapper {
+	background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+    height: auto;
+    padding: 0;
+    background-image: url("/sites/default/files/images/homepage-transition-photo.jpg");
+}
+#zone-video-cta {
+	padding: 2em 0;
+}
+.video {
+	opacity: .8;
+	height: 300px;
+	width: 100%;
+/*
+	background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 300px;
+    padding: 0;
+    background-image: url("/sites/default/files/images/Alemany-Yamille-Breast%20Cancer.png");
+    */
+}
+.video iframe {
+	width: 100%;
+	height: 300px;
+}
+.video:hover {
+	opacity: 1;
+}
+.play-button {
+	background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 200px;
+    padding: 0;
+    background-image: url("/sites/default/files/images/Play-button.png");
+    top: 17%;
+    position: relative;
+    opacity: .5;
+    cursor: pointer;
+}
+.play-button:hover {
+	opacity: 1.0;
+}
+#zone-video-cta-wrapper p {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	padding: 17% 0;
+	font-style: italic;
+	font-family: "Open Sans", sans-serif;
+}
+
+/* Stare Your Care */
+#zone-start-your-care-wrapper {
+	background-color: #b30808;
+	padding: .75em 0;
+}
+#zone-start-your-care-wrapper p {
+	color: #fff;
+	text-align: center;
+	font-size: 66px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+/* Footer */
+#zone-footer {
+	padding: 2% 0;
+}
+
+/* Mobile Hacks */
+
+#block-block-17 {
+	display: none;
+	background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: url("/sites/default/files/images/Homepage-Breakthrough-Mekhail_mobile.jpg");
+    background-position: center bottom;
+    background-size: contain;
+    height: 0px;
+    padding-top: 38%;
+}
+
+#block-block-17 h1 {
+	text-indent: -9000px;
+	margin-bottom: 0;
+}
+
+#block-block-11 .grid-5 p {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 800;
+	color: #661776;
+	text-transform: uppercase;
+	text-align: right;
+	margin-bottom: 2em;
+	padding-top: 2em;
+}
+#block-block-11 .grid-5 p:before {
+	content: url("/sites/default/files/images/phone-icon.png");
+	padding-right: 10px;
+}
+
+
+
+
+/* Design Changes - 3/27/2017 */
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/sites/default/files/fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('/sites/default/files/fonts/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('/sites/default/files/fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('/sites/default/files/fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.front header.l-wrapper {
+    height: 600px;
+    background-image: url("/sites/default/files/Someday_Starts_Today.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* End Design Changes - 3/27/2017 */
+
+
+
+/*
+
+#block-block-17 {
+	display: none;
+	background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 250px;
+    padding: 0;
+    background-image: url("/sites/default/files/images/Alemany.jpg");
+}
+
+#block-block-17 h1 {
+	text-indent: -9000px;
+	margin-bottom: 0;
+}
+*/
+
+
+/* Hacks */
+.first {
+	margin-left: 0 !important;
+}
+.last {
+	margin-right: 0 !important;
+}
+.center {
+	text-align: center;
+}
+
+
+/* Responsive Styles */
+
+@media all and (max-width: 1200px) {
+	#zone-provider-banner-wrapper {
+		background-size: contain;
+		background-position: center top;
+		height: 0;
+	}
+	.page-node-4 #zone-provider-banner-wrapper {
+		background-image: url("/sites/default/files/images/Alemany_Mobile.jpg");
+	}
+	#block-block-72 {
+		display: none;
+	}
+}
+
+@media all and (max-width: 790px) {
+	#region-branding {
+		width: 300px;
+		margin: auto;
+	}
+	#zone-menu-wrapper .grid-4, #zone-homepage-menu-wrapper .grid-4 {
+		width: 30%;
+		float: left;
+	}
+	#zone-menu-wrapper a:link, #zone-menu-wrapper a, #zone-homepage-menu-wrapper a:link, #zone-homepage-menu-wrapper a {
+		font-size: 14px;
+	}
+
+	.programs .region {
+		margin-bottom: 10px;
+	}
+	.programs .clearfix {
+		margin-bottom: 0;
+	}
+	#zone-video-cta-wrapper p {
+		text-align: center;
+		padding: 0;
+		margin-top: 1em;
+		margin-bottom: 0;
+		font-style: 
+	}
+	.view-providers .views-row, .view-programs-page .views-row {
+		max-width: 25%;
+	}
+	.region-header-first-inner .region,
+	.programs .region
+
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#region-cta-button {
+		display: none;
+	}
+	.fluid img {
+		width: 250%;
+	}
+	#block-rotating-banner-1 {
+		display: none;
+	}
+	#zone-homepage-menu-wrapper {
+		border-top: 1px solid #c2c2c2;
+	}
+	.page-taxonomy .last, .node-type-provider .last {
+		margin-left: 0;
+	}
+	.node-type-provider #zone-provider-title-wrapper .grid-8 {
+		width: 100%;
+	}
+	.bottlecap {
+		display: none;
+	}
+}
+
+/* Iphone */
+
+@media all and (max-width: 540px) {
+	#zone-menu-wrapper .grid-4, #zone-homepage-menu-wrapper .grid-4 {
+		width: 26%;
+		float: left;
+	}
+	h1 {
+		font-size: 26px;
+	}
+	#zone-header-wrapper h1 {
+		text-align: left;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	h5 {
+		font-size: 20px;
+	}
+	body, p {
+		font-size: 14px;
+	}
+	#region-content .region, #region-header .region {
+		margin: 0;
+	}
+	#region-content .grid-3 {
+		margin-bottom: 20px;
+	}
+	.programs .clearfix {
+		margin-bottom: 0;
+	}
+	#zone-header-wrapper ul {
+		padding: 0 15px;
+	}
+	.view-providers .views-row, .view-programs-page .views-row {
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+	#zone-video-cta {
+		text-align: center;
+	}
+	.video {
+		height: 100%;
+	}
+	#zone-start-your-care-wrapper p {
+		font-size: 36px;
+	}
+	textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+		width: 100%;
+	}
+	#zone-menu-wrapper .grid-4, #zone-homepage-menu-wrapper .grid-4 {
+		height: 40px;
+	}
+	#zone-banner-title-wrapper h2 {
+		font-size: 26px;
+	}
+	#zone-provider-title-wrapper h1 {
+		font-size: 34px;
+		line-height: 40px;
+	}
+	#zone-provider-title-wrapper h2 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	#zone-provider-title-wrapper h6 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+@media all and (max-width: 320px) {
+	#zone-menu-wrapper .grid-4, #zone-homepage-menu-wrapper .grid-4 {
+		height: 100%;
+	}
+}
+
+@media all and (max-width: 1090px) {
+	.page-taxonomy-term-13 #zone-program-banner-wrapper{
+		background-image:url("/sites/default/files/images/banner-colo-1090.jpg");
+	}
+}
+@media all and (max-width: 737px) {
+	.page-taxonomy-term-13 #zone-program-banner-wrapper{
+		background-image:url("/sites/default/files/images/banner-colo-737.jpg");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
